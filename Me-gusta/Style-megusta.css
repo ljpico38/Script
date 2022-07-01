@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.top {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.titulo {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+.left p {
+    margin: 20px;
+}
+.post {
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid gray;
+    font-size: 1.2rem;
+}
+.top-line {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px
+}
+.like-btn {
+    background-color: yellowgreen;
+    padding: 5px 10px;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
