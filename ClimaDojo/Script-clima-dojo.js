@@ -1,42 +1,40 @@
-/*function loading(){
-    alert("Cargando clima en tu ciudad");
-}
-
-function ocultarcookie(){
-    var elemento = document.querySelector(".cookie");
-    console.log(elemento);
-    elemento.classList.add("esconder")
-}*/
-
 console.log("page loading...");
-
 var cookieDiv = document.querySelector(".cookie-policy");
-
 function loading() {
-    alert("Loading weather report...")
+    alert("Cargando el clima de su ciudad. . . ...")
 }
-
-function accept() {
+function ocultarcookie() {
     cookieDiv.remove();
 }
+function convert(elemento){
+    console.log(elemento.value);
+    if(elemento.value == "farenheit"){
+        let num = document.getElementsByClassName("max");
+        for (var i=0; i<num.length; i++){
+            var valor = num[i].innerText;
+            valor.slice(0,2);
+            let var_int = parseInt(valor);
+            console.log(var_int);            
+            num.[i].innerText = var_int * 2;
+            }
+        console.log(num[0].outerText);
 
-function c2f(temp) {
-    return Math.round(9 / 5 * temp + 32);
-}
-
-function f2c(temp) {
-    return Math.round(5 / 9 * (temp - 32));
-}
-
-function convert(element) {
-    console.log(element.value);
-    for(var i=1; i<9; i++) {
-        var tempSpan = document.querySelector("#temp" + i);
-        var tempVal = parseInt(tempSpan.innerText);
-        if(element.value == "°C") {
-            tempSpan.innerText = f2c(tempVal);
-        } else {
-            tempSpan.innerText = c2f(tempVal);
+        alert("se cambio a farenheit");
         }
-    }
+}
+function convert(elemento){
+    console.log(elemento.value);
+    if(elemento.value == "Celsius"){
+        let num = document.getElementsByClassName("max");
+        for (var i=0; i<num.length; i++){
+            var valor = num[i].innerText;
+            valor.slice(0,2);
+            let var_int = parseInt(valor);
+            console.log(var_int);            
+            num.[i].innerText = var_int * 2;
+            }
+        console.log(num[0].outerText);
+
+        alert("se cambio a Celsius");
+        }
 }
