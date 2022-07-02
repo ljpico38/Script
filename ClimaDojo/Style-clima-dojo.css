@@ -4,16 +4,16 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .nav {
-    background-color: paleturquoise;
-    color:whitesmoke;
+    background-color: #122b4b;
+    color: rgb(107, 13, 13);
 }
 
-.contenedor, .nav {
-    width: 1200px;
+.container, .encabezado {
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -26,20 +26,20 @@ body {
 }
 
 .encabezado ul {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-
+    width: 60%;
+    display: contents;
+    justify-content: right;
+    list-style-type: none;
 }
 
 .encabezado h1 {
-    font-size: 2.5rem;
+    font-size: 90fr;
 }
 
 .encabezado a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 50fr;
 }
 
 .subtitle-line {
@@ -52,10 +52,11 @@ body {
 }
 
 .subtitle-line h2 {
-    font-size: 1.8rem;
+    font-size: small
 }
+
 .subtitle-line select, .subtitle-line label {
-    font-size: 1.2rem;
+    font-size: 50fr;
     padding: 5px;
 }
 
@@ -67,55 +68,46 @@ body {
     display: flex;
 }
 
-.clima img {
+.clima {
     flex: 1;
     text-align: center;
-    background-color: #ddd;
-    padding: 40px 40px;
-}
-
-.img {
+    background-color: rgb(119, 87, 87);
+    padding: 40px 0;
     margin-right: 20px;
-    border-radius: 90%;
-    width: 160px;
-    margin: 40px 0;
-    padding: 10px;
-    margin: 20px;
 }
 
-p{
-    padding-bottom: 15px;
-    color: blue;
-}
-
-.forecast:last-child {
+.clima:last-child {
     margin-right: 0;
 }
-.forecast p {
-    font-size: 1.2rem;
+
+.clima img {
+    border-radius: 50%;
+    width: 80% ;
+    margin: 40px 0;
+}
+
+.clima p {
+    font-size: 50fr;
 }
 
 .temperatures {
     margin-top: 20px;
+    height: auto;
     display: flex;
     justify-content: space-around;
 }
 
-.high, .low {
-    font-size: 1.5rem;
-    font-weight: 900;
+.max, .min {
+    font-size: 3rem;
+    font-weight: 600;
 }
 
-.high::after, .low::after {
-    content: "°";
+.max {
+    color: #cf2a27;
 }
 
-.high {
-    color: darkred;
-}
-
-.low {
-    color: skyblue;
+.min {
+    color: #2b78e4;
 }
 
 .footer {
@@ -129,30 +121,21 @@ p{
     width: 1000px;
     height: 160px;
     padding: 20px;
-    border: 2px solid gray;
+    border: 2px solid #999;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .btn {
     padding: 10px 20px;
-    font-size: 1.2rem;
-    border: 2px solid black;
-    box-shadow: 4px 4px black;
-    background-color: cadetblue;
+    font-size: 50fr;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    background-color: #9fc5f8;
     cursor: pointer;
 }
 
 .text {
     width: 70%;
-}
-
-.text h2 {
-    font-size: 1.8rem;
-}
-
-.text p {
-    font-size: 1.2rem;
 }
